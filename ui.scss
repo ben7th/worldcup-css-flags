@@ -1,0 +1,387 @@
+body {
+  background-color:#eee;
+  padding:20px;
+  margin: 0;
+}
+
+.flags {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.flag {
+  width:180px;
+  height:110px;
+  background-color:#fff;
+  box-shadow:0 1px 2px rgba(black, 0.07);
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius:4px;
+  overflow: hidden;
+  &:nth-child(4n+1) {
+    clear:both;
+  }
+}
+
+.flag.japan {
+  $w: 60px;
+  &:before {
+    content: "";
+    height:$w;
+    width:$w;
+    background-color:#BE0026;
+    display: block;
+    position: absolute;
+    top:(110px - $w)/2;
+    left:(180px - $w)/2; 
+    border-radius:$w;
+  }
+}
+
+.flag.france {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#002D67;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;right:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#EF4135;
+  }
+}
+
+.flag.italy {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#008D46;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;right:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#D2232C;
+  }
+}
+
+.flag.belgium {
+  background-color:#FFDE00;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#000000;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;right:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#EE0000;
+  }
+}
+
+.flag.nigeria {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#008751;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;right:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#008751;
+  }
+}
+
+.flag.cote {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#F77F00;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;right:0;bottom:0;
+    width:percentage(1/3);
+    background-color:#009E60;
+  }
+}
+
+.flag.germany {
+  background-color:#ED1C24;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;right:0;
+    height:percentage(1/3);
+    background-color:#000000;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:0;left:0;right:0;
+    height:percentage(1/3);
+    background-color:#FFD900;
+  }
+}
+
+.flag.holland {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;right:0;
+    height:percentage(1/3);
+    background-color:#A20E23;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:0;left:0;right:0;
+    height:percentage(1/3);
+    background-color:#1F4085;
+  }
+}
+
+.flag.russia {
+  background-color: #0000FF;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;right:0;
+    height:percentage(1/3);
+    background-color:#FFFFFF;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:0;left:0;right:0;
+    height:percentage(1/3);
+    background-color:#FF0000;
+  }
+}
+
+.flag.columbia {
+  background-color: #003893;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;right:0;
+    height:percentage(1/2);
+    background-color:#FCD116;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:0;left:0;right:0;
+    height:percentage(1/4);
+    background-color:#CE1126;
+  }
+}
+
+.flag.costarica {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;left:0;right:0;
+    height:percentage(1/6);
+    background-color:#002B7F;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:0;left:0;right:0;
+    height:percentage(1/6);
+    background-color:#002B7F;
+  }
+  .a {
+    position: absolute;
+    top:percentage(1/3);
+    bottom:percentage(1/3);
+    left:0;right:0;
+    background-color:#CE1126;
+  }
+}
+
+.flag.england {
+  $w:22px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:(110px - $w)/2;
+    height:$w;
+    left:0;right:0;
+    background-color: #CF142B;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left:(180px - $w)/2;
+    width: $w;
+    top:0;bottom:0;
+    background-color: #CF142B;
+  }
+}
+
+.flag.switzerland {
+  $w:22px;
+  $w1:$w*3.3;
+  background-color: #BD2925;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:(110px - $w)/2;
+    height:$w;
+    left:(180px - $w1)/2;
+    width:$w1;
+    background-color: #fff;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:(110px - $w1)/2;
+    height: $w1;
+    left:(180px - $w)/2;
+    width: $w;
+    background-color: #fff;
+  }
+}
+
+.flag.greece {
+  $w: 180px * 3/8;
+  $hs: 110px * 1/9;
+  $ws: $w / 4;
+  .a {
+    height:$hs;
+    background-color:#0061AA;
+    margin-bottom:$hs;
+  }
+  .b {
+    background-color:#0061AA;
+    position:absolute;
+    top:0;left:0;
+    width:$w;
+    height:$hs*5;
+    &:before {
+      content: "";
+      position: absolute;
+      top:50%;
+      left:0;right:0;
+      height:$ws;
+      margin-top:-$ws/2;
+      background-color:#fff;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left:50%;
+      width:$ws;
+      top:0;bottom:0;
+      margin-left: -$ws/2;
+      background-color: #FFF;
+    }
+  }
+}
+
+.star {
+  $c:red;
+  $w:100px;
+
+  $realw: 20px;
+
+  $w1:$w * 0.726542528 / 2;
+
+  $s:0.6180339887;
+
+  width:0;
+  height:0;
+
+  border-top:solid $w1 $c;
+  border-bottom:solid $w1 transparent;
+  border-left:solid $w/2 transparent;
+  border-right:solid $w/2 transparent;
+
+  position:absolute;
+
+  $p:$realw / 100px;
+  -webkit-transform: scale($p) translate(0, $w1);
+  margin-left: -(100px - $realw)/2;
+  margin-top: -(100px - $realw)/2;
+
+
+  &:before {
+    content:"";
+    display: block;
+    position:absolute;
+
+    width:0;
+    height:0;
+
+    border-top:solid $w1 $c;
+    border-bottom:solid $w1 transparent;
+    border-left:solid $w/2 transparent;
+    border-right:solid $w/2 transparent;
+    left:-$w/2 - $w*(1-$s) / 2;
+    top:-$w1 - $w*(1-$s)/2*0.726542528;
+    -webkit-transform: rotate(72deg);
+  }
+
+  &:after {
+    content:"";
+    display: block;
+    position: absolute;
+
+    width:0;
+    height:0;
+
+    border-top:solid $w1 $c;
+    border-bottom:solid $w1 transparent;
+    border-left:solid $w/2 transparent;
+    border-right:solid $w/2 transparent;
+    left:-$w/2 + $w*(1-$s) / 2;
+    top:-$w1 - $w*(1-$s)/2*0.726542528;
+    -webkit-transform: rotate(-72deg);
+  }
+}

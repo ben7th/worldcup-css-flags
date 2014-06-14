@@ -1,0 +1,346 @@
+body {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0; }
+
+.flags {
+  overflow: hidden;
+  padding-bottom: 20px; }
+
+.flag {
+  width: 180px;
+  height: 110px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  overflow: hidden; }
+  .flag:nth-child(4n+1) {
+    clear: both; }
+
+.flag.japan:before {
+  content: "";
+  height: 60px;
+  width: 60px;
+  background-color: #BE0026;
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  border-radius: 60px; }
+
+.flag.france:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #002D67; }
+.flag.france:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #EF4135; }
+
+.flag.italy:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #008D46; }
+.flag.italy:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #D2232C; }
+
+.flag.belgium {
+  background-color: #FFDE00; }
+  .flag.belgium:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 33.33333%;
+    background-color: #000000; }
+  .flag.belgium:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 33.33333%;
+    background-color: #EE0000; }
+
+.flag.nigeria:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #008751; }
+.flag.nigeria:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #008751; }
+
+.flag.cote:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #F77F00; }
+.flag.cote:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 33.33333%;
+  background-color: #009E60; }
+
+.flag.germany {
+  background-color: #ED1C24; }
+  .flag.germany:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33.33333%;
+    background-color: #000000; }
+  .flag.germany:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 33.33333%;
+    background-color: #FFD900; }
+
+.flag.holland:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 33.33333%;
+  background-color: #A20E23; }
+.flag.holland:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 33.33333%;
+  background-color: #1F4085; }
+
+.flag.russia {
+  background-color: #0000FF; }
+  .flag.russia:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33.33333%;
+    background-color: #FFFFFF; }
+  .flag.russia:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 33.33333%;
+    background-color: #FF0000; }
+
+.flag.columbia {
+  background-color: #003893; }
+  .flag.columbia:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #FCD116; }
+  .flag.columbia:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background-color: #CE1126; }
+
+.flag.costarica:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 16.66667%;
+  background-color: #002B7F; }
+.flag.costarica:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16.66667%;
+  background-color: #002B7F; }
+.flag.costarica .a {
+  position: absolute;
+  top: 33.33333%;
+  bottom: 33.33333%;
+  left: 0;
+  right: 0;
+  background-color: #CE1126; }
+
+.flag.england:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 44px;
+  height: 22px;
+  left: 0;
+  right: 0;
+  background-color: #CF142B; }
+.flag.england:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 79px;
+  width: 22px;
+  top: 0;
+  bottom: 0;
+  background-color: #CF142B; }
+
+.flag.switzerland {
+  background-color: #BD2925; }
+  .flag.switzerland:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 44px;
+    height: 22px;
+    left: 53.7px;
+    width: 72.6px;
+    background-color: #fff; }
+  .flag.switzerland:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18.7px;
+    height: 72.6px;
+    left: 79px;
+    width: 22px;
+    background-color: #fff; }
+
+.flag.greece .a {
+  height: 12.22222px;
+  background-color: #0061AA;
+  margin-bottom: 12.22222px; }
+.flag.greece .b {
+  background-color: #0061AA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67.5px;
+  height: 61.11111px; }
+  .flag.greece .b:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 16.875px;
+    margin-top: -8.4375px;
+    background-color: #fff; }
+  .flag.greece .b:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 16.875px;
+    top: 0;
+    bottom: 0;
+    margin-left: -8.4375px;
+    background-color: #FFF; }
+
+.star {
+  width: 0;
+  height: 0;
+  border-top: solid 36.32713px red;
+  border-bottom: solid 36.32713px transparent;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  position: absolute;
+  -webkit-transform: scale(0.2) translate(0, 36.32713px);
+  margin-left: -40px;
+  margin-top: -40px; }
+  .star:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: solid 36.32713px red;
+    border-bottom: solid 36.32713px transparent;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    left: -69.0983px;
+    top: -50.20285px;
+    -webkit-transform: rotate(72deg); }
+  .star:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: solid 36.32713px red;
+    border-bottom: solid 36.32713px transparent;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+    left: -30.9017px;
+    top: -50.20285px;
+    -webkit-transform: rotate(-72deg); }
