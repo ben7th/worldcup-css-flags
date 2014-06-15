@@ -263,7 +263,7 @@ body {
     }
 
     .flag.japan {
-      $w: 60px;
+      $w: $flagw / 3;
       &:before {
         content: "";
         height:$w;
@@ -474,6 +474,65 @@ body {
             }
           }
         }
+      }
+    }
+
+    .flag.algeria {
+      $w0: $flagw / 11 * 5;
+      &:before {
+        content: ""; position: absolute;
+        top:0;bottom:0;
+        left:0;width: $w0;
+        background-color: #008638;
+      }
+
+      $w: $flagw / 3;
+      &:after {
+        content:"";position: absolute;
+        height: $w;
+        width: $w;
+        background-color: #EE0000;
+        border-radius: $w * 2;
+        top: ($flagh - $w) / 2;
+        left: ($flagw - $w) / 2;
+      }
+
+      $w1: $w / 14 * 12;
+      .a {
+        position: absolute;
+        width: $w1;
+        height: $w1;
+        border-radius: $w1 * 2;
+        background-color: #fff;
+        top: ($flagh - $w1) / 2;
+        left: ($flagw - $w) / 2 + $w / 6;
+        z-index:1;
+        overflow: hidden;
+
+        &:before {
+          content:""; position: absolute;
+          background-color:#008638;
+          left:0;
+          top:0;
+          bottom:0;
+          width:$w0 - $w - $w / 6;
+        }
+      }
+
+      $r: $flagh / 8;
+
+      .bb {
+        position: absolute;
+        top: $flagh / 2 - $r;
+        left: ($flagw - $w) / 2 + $w / 6 + $w1 - $r * 2.2;
+        width:$r * 2;
+        height: $r * 2;
+        z-index: 2;
+        @include transform(rotate(90deg));
+      }
+
+      .b {
+        @include fivestar(#EE0000, $r);
       }
     }
   }

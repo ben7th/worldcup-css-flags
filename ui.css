@@ -895,6 +895,99 @@ body {
         .flags .f .flag.usa .b.i5j4 {
           left: 54.20455px;
           top: 44.74301px; }
+    .flags .f .flag.algeria:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 81.81818px;
+      background-color: #008638; }
+    .flags .f .flag.algeria:after {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      background-color: #EE0000;
+      border-radius: 120px;
+      top: 25px;
+      left: 60px; }
+    .flags .f .flag.algeria .a {
+      position: absolute;
+      width: 51.42857px;
+      height: 51.42857px;
+      border-radius: 102.85714px;
+      background-color: #fff;
+      top: 29.28571px;
+      left: 70px;
+      z-index: 1;
+      overflow: hidden; }
+      .flags .f .flag.algeria .a:before {
+        content: "";
+        position: absolute;
+        background-color: #008638;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 11.81818px; }
+    .flags .f .flag.algeria .bb {
+      position: absolute;
+      top: 41.25px;
+      left: 91.17857px;
+      width: 27.5px;
+      height: 27.5px;
+      z-index: 2;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .flags .f .flag.algeria .b {
+      width: 0px;
+      height: 0px;
+      border-top: solid #ee0000 207.2949px;
+      border-bottom: solid transparent 207.2949px;
+      border-left: solid transparent 285.31695px;
+      border-right: solid transparent 285.31695px;
+      margin-left: -286.25px;
+      margin-top: 9.50102px;
+      -webkit-transform: translate(14.68305px, -197.79389px) scale(0.04583);
+      -moz-transform: translate(14.68305px, -197.79389px) scale(0.04583);
+      -ms-transform: translate(14.68305px, -197.79389px) scale(0.04583);
+      -o-transform: translate(14.68305px, -197.79389px) scale(0.04583);
+      transform: translate(14.68305px, -197.79389px) scale(0.04583); }
+      .flags .f .flag.algeria .b:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: solid #ee0000 207.2949px;
+        border-bottom: solid transparent 207.2949px;
+        border-left: solid transparent 285.31695px;
+        border-right: solid transparent 285.31695px;
+        left: -394.29833px;
+        top: -286.47451px;
+        -webkit-transform: rotate(72deg);
+        -moz-transform: rotate(72deg);
+        -ms-transform: rotate(72deg);
+        -o-transform: rotate(72deg);
+        transform: rotate(72deg); }
+      .flags .f .flag.algeria .b:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: solid #ee0000 207.2949px;
+        border-bottom: solid transparent 207.2949px;
+        border-left: solid transparent 285.31695px;
+        border-right: solid transparent 285.31695px;
+        left: -176.33558px;
+        top: -286.47451px;
+        -webkit-transform: rotate(-72deg);
+        -moz-transform: rotate(-72deg);
+        -ms-transform: rotate(-72deg);
+        -o-transform: rotate(-72deg);
+        transform: rotate(-72deg); }
 
 .starbox {
   width: 200px;
