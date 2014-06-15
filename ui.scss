@@ -414,6 +414,65 @@ body {
       }
     }
 
+    .flag.usa {
+      $lw: $flagh / 13;
+      background-color:#BF0A30;
+
+      .l {
+        position: absolute;
+        border-top:solid $lw white;
+        border-bottom:solid $lw white;
+        height: $lw;
+        left:0;right:0;
+
+        &:nth-child(1) {top:$lw;}
+        &:nth-child(2) {top:$lw * 5;}
+        &:nth-child(3) {top:$lw * 9;}
+      }
+
+      $bh: $lw * 7;
+      $bw: $flagw * 3 / 8;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left:0; top:0;
+        height: $bh;
+        width: $bw;
+        background-color: #002D67;
+        z-index:1;
+      }
+
+      .a {
+        position: absolute;
+        @include fivestar(white, 3px);
+        z-index: 2;
+
+        @for $i from 1 through 6 {
+          @for $j from 1 through 5 {
+            &.i#{$i}j#{$j} {
+              left: 3px + ($bw / 6) * ($i - 1);
+              top: 3px + ($bh / 5) * ($j - 1);
+            }
+          }
+        }
+      }
+
+      .b {
+        position: absolute;
+        @include fivestar(white, 3px);
+        z-index: 2;
+
+        @for $i from 1 through 5 {
+          @for $j from 1 through 4 {
+            &.i#{$i}j#{$j} {
+              left: 3px + ($bw / 6) * ($i - 1) + 5.5px;
+              top: 3px + ($bh / 5) * ($j - 1) + 5.5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

@@ -104,6 +104,23 @@
 
       %hr
 
+      .f
+        .flag.usa
+          - 3.times do
+            .l
+          .aa
+            - 6.times do |i|
+              - 5.times do |j|
+                .a{:class => "i#{i+1}j#{j+1}"}
+          .bb
+            - 5.times do |i|
+              - 4.times do |j|
+                .b{:class => "i#{i+1}j#{j+1}"}
+
+        .name 美国
+
+      %hr
+
       .starbox
         .star
 

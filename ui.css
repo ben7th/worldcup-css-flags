@@ -625,6 +625,276 @@ body {
           -ms-transform: rotate(-72deg);
           -o-transform: rotate(-72deg);
           transform: rotate(-72deg); }
+    .flags .f .flag.usa {
+      background-color: #BF0A30; }
+      .flags .f .flag.usa .l {
+        position: absolute;
+        border-top: solid 8.46154px white;
+        border-bottom: solid 8.46154px white;
+        height: 8.46154px;
+        left: 0;
+        right: 0; }
+        .flags .f .flag.usa .l:nth-child(1) {
+          top: 8.46154px; }
+        .flags .f .flag.usa .l:nth-child(2) {
+          top: 42.30769px; }
+        .flags .f .flag.usa .l:nth-child(3) {
+          top: 76.15385px; }
+      .flags .f .flag.usa:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 59.23077px;
+        width: 67.5px;
+        background-color: #002D67;
+        z-index: 1; }
+      .flags .f .flag.usa .a {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-top: solid white 207.2949px;
+        border-bottom: solid transparent 207.2949px;
+        border-left: solid transparent 285.31695px;
+        border-right: solid transparent 285.31695px;
+        margin-left: -297px;
+        margin-top: 2.07295px;
+        -webkit-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        -moz-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        -ms-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        -o-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        transform: translate(14.68305px, -205.22195px) scale(0.01);
+        z-index: 2; }
+        .flags .f .flag.usa .a:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: solid white 207.2949px;
+          border-bottom: solid transparent 207.2949px;
+          border-left: solid transparent 285.31695px;
+          border-right: solid transparent 285.31695px;
+          left: -394.29833px;
+          top: -286.47451px;
+          -webkit-transform: rotate(72deg);
+          -moz-transform: rotate(72deg);
+          -ms-transform: rotate(72deg);
+          -o-transform: rotate(72deg);
+          transform: rotate(72deg); }
+        .flags .f .flag.usa .a:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: solid white 207.2949px;
+          border-bottom: solid transparent 207.2949px;
+          border-left: solid transparent 285.31695px;
+          border-right: solid transparent 285.31695px;
+          left: -176.33558px;
+          top: -286.47451px;
+          -webkit-transform: rotate(-72deg);
+          -moz-transform: rotate(-72deg);
+          -ms-transform: rotate(-72deg);
+          -o-transform: rotate(-72deg);
+          transform: rotate(-72deg); }
+        .flags .f .flag.usa .a.i1j1 {
+          left: 3px;
+          top: 3px; }
+        .flags .f .flag.usa .a.i1j2 {
+          left: 3px;
+          top: 14.84615px; }
+        .flags .f .flag.usa .a.i1j3 {
+          left: 3px;
+          top: 26.69231px; }
+        .flags .f .flag.usa .a.i1j4 {
+          left: 3px;
+          top: 38.53846px; }
+        .flags .f .flag.usa .a.i1j5 {
+          left: 3px;
+          top: 50.38462px; }
+        .flags .f .flag.usa .a.i2j1 {
+          left: 14.25px;
+          top: 3px; }
+        .flags .f .flag.usa .a.i2j2 {
+          left: 14.25px;
+          top: 14.84615px; }
+        .flags .f .flag.usa .a.i2j3 {
+          left: 14.25px;
+          top: 26.69231px; }
+        .flags .f .flag.usa .a.i2j4 {
+          left: 14.25px;
+          top: 38.53846px; }
+        .flags .f .flag.usa .a.i2j5 {
+          left: 14.25px;
+          top: 50.38462px; }
+        .flags .f .flag.usa .a.i3j1 {
+          left: 25.5px;
+          top: 3px; }
+        .flags .f .flag.usa .a.i3j2 {
+          left: 25.5px;
+          top: 14.84615px; }
+        .flags .f .flag.usa .a.i3j3 {
+          left: 25.5px;
+          top: 26.69231px; }
+        .flags .f .flag.usa .a.i3j4 {
+          left: 25.5px;
+          top: 38.53846px; }
+        .flags .f .flag.usa .a.i3j5 {
+          left: 25.5px;
+          top: 50.38462px; }
+        .flags .f .flag.usa .a.i4j1 {
+          left: 36.75px;
+          top: 3px; }
+        .flags .f .flag.usa .a.i4j2 {
+          left: 36.75px;
+          top: 14.84615px; }
+        .flags .f .flag.usa .a.i4j3 {
+          left: 36.75px;
+          top: 26.69231px; }
+        .flags .f .flag.usa .a.i4j4 {
+          left: 36.75px;
+          top: 38.53846px; }
+        .flags .f .flag.usa .a.i4j5 {
+          left: 36.75px;
+          top: 50.38462px; }
+        .flags .f .flag.usa .a.i5j1 {
+          left: 48px;
+          top: 3px; }
+        .flags .f .flag.usa .a.i5j2 {
+          left: 48px;
+          top: 14.84615px; }
+        .flags .f .flag.usa .a.i5j3 {
+          left: 48px;
+          top: 26.69231px; }
+        .flags .f .flag.usa .a.i5j4 {
+          left: 48px;
+          top: 38.53846px; }
+        .flags .f .flag.usa .a.i5j5 {
+          left: 48px;
+          top: 50.38462px; }
+        .flags .f .flag.usa .a.i6j1 {
+          left: 59.25px;
+          top: 3px; }
+        .flags .f .flag.usa .a.i6j2 {
+          left: 59.25px;
+          top: 14.84615px; }
+        .flags .f .flag.usa .a.i6j3 {
+          left: 59.25px;
+          top: 26.69231px; }
+        .flags .f .flag.usa .a.i6j4 {
+          left: 59.25px;
+          top: 38.53846px; }
+        .flags .f .flag.usa .a.i6j5 {
+          left: 59.25px;
+          top: 50.38462px; }
+      .flags .f .flag.usa .b {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-top: solid white 207.2949px;
+        border-bottom: solid transparent 207.2949px;
+        border-left: solid transparent 285.31695px;
+        border-right: solid transparent 285.31695px;
+        margin-left: -297px;
+        margin-top: 2.07295px;
+        -webkit-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        -moz-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        -ms-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        -o-transform: translate(14.68305px, -205.22195px) scale(0.01);
+        transform: translate(14.68305px, -205.22195px) scale(0.01);
+        z-index: 2; }
+        .flags .f .flag.usa .b:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: solid white 207.2949px;
+          border-bottom: solid transparent 207.2949px;
+          border-left: solid transparent 285.31695px;
+          border-right: solid transparent 285.31695px;
+          left: -394.29833px;
+          top: -286.47451px;
+          -webkit-transform: rotate(72deg);
+          -moz-transform: rotate(72deg);
+          -ms-transform: rotate(72deg);
+          -o-transform: rotate(72deg);
+          transform: rotate(72deg); }
+        .flags .f .flag.usa .b:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: solid white 207.2949px;
+          border-bottom: solid transparent 207.2949px;
+          border-left: solid transparent 285.31695px;
+          border-right: solid transparent 285.31695px;
+          left: -176.33558px;
+          top: -286.47451px;
+          -webkit-transform: rotate(-72deg);
+          -moz-transform: rotate(-72deg);
+          -ms-transform: rotate(-72deg);
+          -o-transform: rotate(-72deg);
+          transform: rotate(-72deg); }
+        .flags .f .flag.usa .b.i1j1 {
+          left: 8.5px;
+          top: 8.5px; }
+        .flags .f .flag.usa .b.i1j2 {
+          left: 8.5px;
+          top: 20.34615px; }
+        .flags .f .flag.usa .b.i1j3 {
+          left: 8.5px;
+          top: 32.19231px; }
+        .flags .f .flag.usa .b.i1j4 {
+          left: 8.5px;
+          top: 44.03846px; }
+        .flags .f .flag.usa .b.i2j1 {
+          left: 19.75px;
+          top: 8.5px; }
+        .flags .f .flag.usa .b.i2j2 {
+          left: 19.75px;
+          top: 20.34615px; }
+        .flags .f .flag.usa .b.i2j3 {
+          left: 19.75px;
+          top: 32.19231px; }
+        .flags .f .flag.usa .b.i2j4 {
+          left: 19.75px;
+          top: 44.03846px; }
+        .flags .f .flag.usa .b.i3j1 {
+          left: 31px;
+          top: 8.5px; }
+        .flags .f .flag.usa .b.i3j2 {
+          left: 31px;
+          top: 20.34615px; }
+        .flags .f .flag.usa .b.i3j3 {
+          left: 31px;
+          top: 32.19231px; }
+        .flags .f .flag.usa .b.i3j4 {
+          left: 31px;
+          top: 44.03846px; }
+        .flags .f .flag.usa .b.i4j1 {
+          left: 42.25px;
+          top: 8.5px; }
+        .flags .f .flag.usa .b.i4j2 {
+          left: 42.25px;
+          top: 20.34615px; }
+        .flags .f .flag.usa .b.i4j3 {
+          left: 42.25px;
+          top: 32.19231px; }
+        .flags .f .flag.usa .b.i4j4 {
+          left: 42.25px;
+          top: 44.03846px; }
+        .flags .f .flag.usa .b.i5j1 {
+          left: 53.5px;
+          top: 8.5px; }
+        .flags .f .flag.usa .b.i5j2 {
+          left: 53.5px;
+          top: 20.34615px; }
+        .flags .f .flag.usa .b.i5j3 {
+          left: 53.5px;
+          top: 32.19231px; }
+        .flags .f .flag.usa .b.i5j4 {
+          left: 53.5px;
+          top: 44.03846px; }
 
 .starbox {
   width: 200px;
