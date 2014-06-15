@@ -1,3 +1,15 @@
+@mixin prefixer($name, $params...) {
+  -webkit-#{$name}: $params;
+  -moz-#{$name}: $params;
+  -ms-#{$name}: $params;
+  -o-#{$name}: $params;
+  #{$name}: $params;
+}
+
+@mixin transform($params) {
+  @include prefixer(transform, $params);
+}
+
 @mixin lmr($cl: #fff, $cm: #fff, $cr: #fff) {
   $w: $flagw / 3;
   box-sizing: border-box;
@@ -39,7 +51,7 @@
   margin-left: $realr - $r;
   margin-top: $triangle-h * $scale;
 
-  -webkit-transform: translate($leftoff, $topoff) scale($scale);
+  @include transform(translate($leftoff, $topoff) scale($scale));
 
   $s: 0.6180339887;
   $s1: 1 - $s;
@@ -62,7 +74,7 @@
     left: - $triangle-w - $sloff;
     top: - $triangle-h - $stoff;
 
-    -webkit-transform: rotate(72deg);
+    @include transform(rotate(72deg));
   }
 
   &:after {
@@ -80,7 +92,7 @@
     left: - $triangle-w + $sloff;
     top: - $triangle-h - $stoff;
 
-    -webkit-transform: rotate(-72deg);
+    @include transform(rotate(-72deg));
   }
 }
 
