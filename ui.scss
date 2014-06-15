@@ -1,63 +1,9 @@
-body {
-  background-color:#eee;
-  padding:20px;
-  margin: 0;
-}
-
-.flags {
-  overflow: hidden;
-  padding-bottom: 20px;
-}
-
-$flagw: 180px;
-$flagh: 110px;  
-
-.flag {
-  width: $flagw;
-  height: $flagh;
-  background-color:#fff;
-  box-shadow:0 1px 2px rgba(black, 0.07);
-  position: relative;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border-radius:4px;
-  overflow: hidden;
-}
-
-hr {
-  clear:both;
-  border:0 none;
-  border-top:dashed 1px #aaa;
-  margin: 30px 0;
-}
-
 @mixin lmr($cl: #fff, $cm: #fff, $cr: #fff) {
   $w: $flagw / 3;
   box-sizing: border-box;
   border-left: solid $w $cl;
   border-right: solid $w $cr;
   background-color: $cm;
-}
-
-.flag.france {
-  @include lmr($cl: #002D67, $cr: #EF4135);
-}
-
-.flag.italy {
-  @include lmr($cl: #008D46, $cr: #D2232C);
-}
-
-.flag.belgium {
-  @include lmr($cl: #000000, $cm: #FFDE00, $cr: #EE0000);
-}
-
-.flag.nigeria {
-  @include lmr($cl: #008751, $cr: #008751);
-}
-
-.flag.cote {
-  @include lmr($cl: #F77F00, $cr: #009E60);
 }
 
 @mixin tmb($ct: #fff, $cm: #fff, $cb: #fff) {
@@ -68,211 +14,412 @@ hr {
   background-color: $cm;
 }
 
-.flag.germany {
-  @include tmb($ct: #000000, $cm: #ED1C24, $cb: #FFD900);
-}
+@mixin fivestar($c, $realr) {
+  $r: 300px;
 
-.flag.holland {
-  @include tmb($ct: #A20E23, $cb: #1F4085);
-}
+  $cos18: 0.9510565163;
+  $tan36: 0.726542528;
 
-.flag.russia {
-  @include tmb($ct: #FFFFFF, $cm: #0000FF, $cb: #FF0000);
-}
+  $triangle-w: $r * $cos18;
+  $triangle-h: $triangle-w * $tan36;
 
-.flag.columbia {
-  @include tmb($ct: #FCD116, $cm: #003893, $cb: #CE1126);
-  border-top-width: $flagh / 2;
-  border-bottom-width: $flagh / 4;
-}
+  width:0px;
+  height:0px;
 
-.flag.england {
-  $w: $flagh / 5;
-  &:before {
-    content: "";
-    position: absolute;
-    top:($flagh - $w)/2;
-    height:$w;
-    left:0;right:0;
-    background-color: #CF142B;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    left:($flagw - $w)/2;
-    width: $w;
-    top:0;bottom:0;
-    background-color: #CF142B;
-  }
-}
+  border-top:solid $c $triangle-h;
+  border-bottom:solid transparent $triangle-h;
+  border-left:solid transparent $triangle-w;
+  border-right:solid transparent $triangle-w;
 
-.flag.switzerland {
-  $w: $flagh / 5;
-  $w1: $w * 3.3;
-  background-color: #BD2925;
-  &:before {
-    content: "";
-    position: absolute;
-    top:($flagh - $w)/2;
-    height:$w;
-    left:($flagw - $w1)/2;
-    width:$w1;
-    background-color: #fff;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top:($flagh - $w1)/2;
-    height: $w1;
-    left:($flagw - $w)/2;
-    width: $w;
-    background-color: #fff;
-  }
-}
+  $scale: $realr / $r;
 
-.flag.costarica {
-  background-color: #002B7F;
-  $w: $flagh / 6;
+  $topoff: $triangle-h * ($scale - 1);
+  $leftoff: $r - $triangle-w;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: $w;
-    bottom: $w;
-    left: 0; right: 0;
-    @include tmb($cm: #CE1126);
-    border-top-width: $w;
-    border-bottom-width: $w;
-  }
-}
+  margin-left: $realr - $r;
+  margin-top: $triangle-h * $scale;
 
-.flag.japan {
-  $w: 60px;
-  &:before {
-    content: "";
-    height:$w;
-    width:$w;
-    background-color:#BE0026;
-    display: block;
-    position: absolute;
-    top:($flagh - $w)/2;
-    left:($flagw - $w)/2; 
-    border-radius:$w;
-  }
-}
+  -webkit-transform: translate($leftoff, $topoff) scale($scale);
 
+  $s: 0.6180339887;
+  $s1: 1 - $s;
 
-.flag.greece {
-  $w: $flagh / 9;
-  $a-width: $flagw * 3/8;
-  $a-height: $w * 5;
-  $w1: $w;
-
-  background-color: #0061AA;
-  &:before {
-    content: "";
-    position: absolute;
-    top: $w; height: $w * 3;
-    left:0; right: 0;
-    @include tmb($cm: #0061AA);
-    border-top-width: $w;
-    border-bottom-width: $w;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: $w; height: $w * 3;
-    left:0; right: 0;
-    @include tmb($cm: #0061AA);
-    border-top-width: $w;
-    border-bottom-width: $w;
-  }
-
-  .a {
-    position: absolute;
-    top:0;left:0;
-    width: $a-width;
-    height: $a-height;
-    background-color: #0061AA;
-
-    &:before {
-      content:"";position: absolute;
-      top: 50%;
-      height: $w1;
-      left:0;right:0;
-      background-color: #FFF;
-      margin-top: -$w1/2;
-    }
-
-    &:after {
-      content:"";position: absolute;
-      left:50%;
-      width:$w1;
-      top:0;bottom:0;
-      background-color: #FFF;
-      margin-left: -$w1/2;
-    }
-  }
-}
-
-.star {
-  $c:red;
-  $w:100px;
-
-  $realw: 20px;
-
-  $w1:$w * 0.726542528 / 2;
-
-  $s:0.6180339887;
-
-  width:0;
-  height:0;
-
-  border-top:solid $w1 $c;
-  border-bottom:solid $w1 transparent;
-  border-left:solid $w/2 transparent;
-  border-right:solid $w/2 transparent;
-
-  position:absolute;
-
-  $p:$realw / 100px;
-  -webkit-transform: scale($p) translate(0, $w1);
-  margin-left: -(100px - $realw)/2;
-  margin-top: -(100px - $realw)/2;
-
+  $sloff: $triangle-w * $s1;
+  $stoff: $sloff * $tan36;
 
   &:before {
     content:"";
-    display: block;
-    position:absolute;
+    position: absolute;
 
     width:0;
     height:0;
 
-    border-top:solid $w1 $c;
-    border-bottom:solid $w1 transparent;
-    border-left:solid $w/2 transparent;
-    border-right:solid $w/2 transparent;
-    left:-$w/2 - $w*(1-$s) / 2;
-    top:-$w1 - $w*(1-$s)/2*0.726542528;
+    border-top:solid $c $triangle-h;
+    border-bottom:solid transparent $triangle-h;
+    border-left:solid transparent $triangle-w;
+    border-right:solid transparent $triangle-w;
+
+    left: - $triangle-w - $sloff;
+    top: - $triangle-h - $stoff;
+
     -webkit-transform: rotate(72deg);
   }
 
   &:after {
     content:"";
-    display: block;
     position: absolute;
 
     width:0;
     height:0;
 
-    border-top:solid $w1 $c;
-    border-bottom:solid $w1 transparent;
-    border-left:solid $w/2 transparent;
-    border-right:solid $w/2 transparent;
-    left:-$w/2 + $w*(1-$s) / 2;
-    top:-$w1 - $w*(1-$s)/2*0.726542528;
+    border-top:solid $c $triangle-h;
+    border-bottom:solid transparent $triangle-h;
+    border-left:solid transparent $triangle-w;
+    border-right:solid transparent $triangle-w;
+
+    left: - $triangle-w + $sloff;
+    top: - $triangle-h - $stoff;
+
     -webkit-transform: rotate(-72deg);
   }
+}
+
+$flagw: 180px;
+$flagh: 110px; 
+
+body {
+  background-color:#eee;
+  padding:20px;
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", 
+    Helvetica, Arial, sans-serif, "微软雅黑";
+
+  a {color:#2C5D8D;}
+
+  hr {
+    clear:both;
+    border:0 none;
+    border-top:dashed 1px #aaa;
+    margin: 30px 0;
+  }
+
+  .intro {
+    overflow: hidden;
+
+    .avatar {
+      overflow:hidden;
+      border-radius:100px;
+      border:solid 2px rgba(black, 0.3);
+      width:48px;height:48px;
+      img {width:48px;height:48px;}
+
+      float:left;
+      margin-right: 30px;
+    }
+
+    .desc {
+      float: left;
+      font-size: 32px;
+      height:52px;line-height: 52px;
+    }
+  }
+}
+
+.flags {
+  overflow: hidden;
+  padding-bottom: 20px;
+
+  .f {
+    float:left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+    .flag {
+      width: $flagw;
+      height: $flagh;
+      background-color:#fff;
+      box-shadow:0 1px 2px rgba(black, 0.07);
+      position: relative;
+      border-radius:4px;
+      overflow: hidden;
+    }
+
+    .name {
+      text-align:center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .flag.france {
+      @include lmr($cl: #002D67, $cr: #EF4135);
+    }
+
+    .flag.italy {
+      @include lmr($cl: #008D46, $cr: #D2232C);
+    }
+
+    .flag.belgium {
+      @include lmr($cl: #000000, $cm: #FFDE00, $cr: #EE0000);
+    }
+
+    .flag.nigeria {
+      @include lmr($cl: #008751, $cr: #008751);
+    }
+
+    .flag.cote {
+      @include lmr($cl: #F77F00, $cr: #009E60);
+    }
+
+
+
+    .flag.germany {
+      @include tmb($ct: #000000, $cm: #ED1C24, $cb: #FFD900);
+    }
+
+    .flag.holland {
+      @include tmb($ct: #A20E23, $cb: #1F4085);
+    }
+
+    .flag.russia {
+      @include tmb($ct: #FFFFFF, $cm: #0000FF, $cb: #FF0000);
+    }
+
+    .flag.columbia {
+      @include tmb($ct: #FCD116, $cm: #003893, $cb: #CE1126);
+      border-top-width: $flagh / 2;
+      border-bottom-width: $flagh / 4;
+    }
+
+    .flag.england {
+      $w: $flagh / 5;
+      &:before {
+        content: "";
+        position: absolute;
+        top:($flagh - $w)/2;
+        height:$w;
+        left:0;right:0;
+        background-color: #CF142B;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left:($flagw - $w)/2;
+        width: $w;
+        top:0;bottom:0;
+        background-color: #CF142B;
+      }
+    }
+
+    .flag.switzerland {
+      $w: $flagh / 5;
+      $w1: $w * 3.3;
+      background-color: #BD2925;
+      &:before {
+        content: "";
+        position: absolute;
+        top:($flagh - $w)/2;
+        height:$w;
+        left:($flagw - $w1)/2;
+        width:$w1;
+        background-color: #fff;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top:($flagh - $w1)/2;
+        height: $w1;
+        left:($flagw - $w)/2;
+        width: $w;
+        background-color: #fff;
+      }
+    }
+
+    .flag.costarica {
+      background-color: #002B7F;
+      $w: $flagh / 6;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: $w;
+        bottom: $w;
+        left: 0; right: 0;
+        @include tmb($cm: #CE1126);
+        border-top-width: $w;
+        border-bottom-width: $w;
+      }
+    }
+
+    .flag.japan {
+      $w: 60px;
+      &:before {
+        content: "";
+        height:$w;
+        width:$w;
+        background-color:#BE0026;
+        display: block;
+        position: absolute;
+        top:($flagh - $w)/2;
+        left:($flagw - $w)/2; 
+        border-radius:$w;
+      }
+    }
+
+
+    .flag.greece {
+      $w: $flagh / 9;
+      $a-width: $flagw * 3/8;
+      $a-height: $w * 5;
+      $w1: $w;
+
+      background-color: #0061AA;
+      &:before {
+        content: "";
+        position: absolute;
+        top: $w; height: $w * 3;
+        left:0; right: 0;
+        @include tmb($cm: #0061AA);
+        border-top-width: $w;
+        border-bottom-width: $w;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: $w; height: $w * 3;
+        left:0; right: 0;
+        @include tmb($cm: #0061AA);
+        border-top-width: $w;
+        border-bottom-width: $w;
+      }
+
+      .a {
+        position: absolute;
+        top:0;left:0;
+        width: $a-width;
+        height: $a-height;
+        background-color: #0061AA;
+
+        &:before {
+          content:"";position: absolute;
+          top: 50%;
+          height: $w1;
+          left:0;right:0;
+          background-color: #FFF;
+          margin-top: -$w1/2;
+        }
+
+        &:after {
+          content:"";position: absolute;
+          left:50%;
+          width:$w1;
+          top:0;bottom:0;
+          background-color: #FFF;
+          margin-left: -$w1/2;
+        }
+      }
+    }
+
+    .flag.cameroon {
+      @include lmr($cl: #007A5E, $cm: #CE1126, $cr: #FCD116);
+      .a {
+        $w: $flagw / 6;
+        @include fivestar(#FCD116, $w / 2);
+        position: absolute;
+        top:($flagh - $w) / 2;
+        left:$w / 2;
+      }
+    }
+
+    .flag.chile {
+      $w: $flagh / 2;
+      box-sizing:border-box;
+      border-bottom:solid $w #D42E12;
+      &:before {
+        content: "";
+        position: absolute;
+        top:0;left:0;
+        height:$w;
+        width:$w;
+        background-color: #0037A9;
+      }
+
+      .a {
+        position: absolute;
+        $w1: $w / 2;
+        @include fivestar(#fff, $w1 / 2);
+        left:$w1 / 2;
+        top:$w1 / 2;
+      }
+    }
+
+    .flag.ghana {
+      @include tmb($ct: #CE1126, $cm: #FCD116, $cb: #006B3F);
+      .a {
+        $r: ceil($flagh / 6 / 0.9045084972); // cos18° ^ 2
+        @include fivestar(black, $r);
+        position: absolute;
+        left:$flagw / 2 - $r;
+      }
+    }
+
+    .flag.honduras {
+      @include tmb($ct: #0047BA, $cb: #0047BA);
+
+      $w: ceil($flagh / 9);
+      $r: $w / 2;
+      .a1 {
+        @include fivestar(#0047BA, $r);
+        position: absolute;
+        left: $flagw / 2 - $r;
+        top: $w;
+      }
+      .a2 {
+        @include fivestar(#0047BA, $r);
+        position: absolute;
+        left: $flagw / 3 - $r;
+        top: $r;
+      }
+
+      .a3 {
+        @include fivestar(#0047BA, $r);
+        position: absolute;
+        left: $flagw / 3 - $r;
+        top: $w + $r;
+      }
+      .a4 {
+        @include fivestar(#0047BA, $r);
+        position: absolute;
+        left: $flagw * 2 / 3 - $r;
+        top: $r;
+      }
+
+      .a5 {
+        @include fivestar(#0047BA, $r);
+        position: absolute;
+        left: $flagw * 2 / 3 - $r;
+        top: $w + $r;
+      }
+    }
+
+  }
+}
+
+// -------------
+
+$realr: 100px;
+
+.starbox {
+  width:$realr * 2;
+  height:$realr * 2;
+  border:solid 3px black;
+  border-radius:$realr * 2
+}
+
+.star {
+  @include fivestar(#0C69F8, 100px);
+}
+
+.star1 {
+  @include fivestar(red, 50px);
 }

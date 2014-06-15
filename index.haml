@@ -1,37 +1,110 @@
 !!!
-%html
+%html{:lang => 'zh'}
   %head
-    %link{rel: 'stylesheet', type: 'text/css', href: 'ui.css'}
+    %meta{:content => 'text/html; charset=utf-8', :'http-equiv' => 'Content-Type'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => 'ui.css'}
   %body
+    .intro
+      .avatar
+        %img{:src => 'https://avatars0.githubusercontent.com/u/322486?s=460'}
+      .desc
+        %span Flags with pure HTML/CSS.
+        %span developd by 
+        %a{:href => 'https://github.com/ben7th', :target => '_blank'} ben7th
+
+    %hr
+
     .flags
+      .f
+        .flag.france
+        .name 法国
 
-      .flag.france
-      .flag.italy
-      .flag.belgium
-      .flag.nigeria
-      .flag.cote
+      .f
+        .flag.italy
+        .name 意大利
+      
+      .f
+        .flag.belgium
+        .name 比利时
+      
+      .f
+        .flag.nigeria
+        .name 尼日利亚
 
-      %hr
-
-      .flag.germany
-      .flag.holland
-      .flag.russia
-      .flag.columbia
-
-      %hr
-
-      .flag.england
-      .flag.switzerland
-      .flag.costarica
-      .flag.japan
-
-      %hr
-
-      .flag.greece
-        .a
+      .f
+        .flag.cote
+        .name 科特迪瓦
 
       %hr
 
-      .star
+      .f
+        .flag.germany
+        .name 德国
+      
+      .f
+        .flag.holland
+        .name 荷兰
 
+      .f
+        .flag.russia
+        .name 俄罗斯
 
+      .f
+        .flag.columbia
+        .name 哥伦比亚
+
+      %hr
+
+      .f
+        .flag.england
+        .name 英格兰
+
+      .f
+        .flag.switzerland
+        .name 瑞士
+      
+      .f
+        .flag.costarica
+        .name 哥斯达黎加
+      
+      .f
+        .flag.japan
+        .name 日本
+
+      %hr
+
+      .f
+        .flag.greece
+          .a
+        .name 希腊
+
+      .f
+        .flag.cameroon
+          .a
+        .name 喀麦隆
+
+      .f
+        .flag.chile
+          .a
+        .name 智利
+
+      .f
+        .flag.ghana
+          .a
+        .name 加纳
+
+      .f
+        .flag.honduras
+          .a1
+          .a2
+          .a3
+          .a4
+          .a5
+        .name 洪都拉斯
+
+      %hr
+
+      .starbox
+        .star
+
+      .star1
