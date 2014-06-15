@@ -97,7 +97,7 @@
 }
 
 $flagw: 180px;
-$flagh: 110px; 
+$flagh: 110px;
 
 body {
   background-color:#eee;
@@ -378,13 +378,13 @@ body {
     .flag.honduras {
       @include tmb($ct: #0047BA, $cb: #0047BA);
 
-      $w: ceil($flagh / 9);
+      $w: ceil($flagh / 3 / 4);
       $r: $w / 2;
       .a1 {
         @include fivestar(#0047BA, $r);
         position: absolute;
         left: $flagw / 2 - $r;
-        top: $w;
+        top: $r * 3;
       }
       .a2 {
         @include fivestar(#0047BA, $r);
@@ -397,7 +397,7 @@ body {
         @include fivestar(#0047BA, $r);
         position: absolute;
         left: $flagw / 3 - $r;
-        top: $w + $r;
+        top: $r * 5;
       }
       .a4 {
         @include fivestar(#0047BA, $r);
@@ -410,7 +410,7 @@ body {
         @include fivestar(#0047BA, $r);
         position: absolute;
         left: $flagw * 2 / 3 - $r;
-        top: $w + $r;
+        top: $r * 5;
       }
     }
 
@@ -443,31 +443,34 @@ body {
         z-index:1;
       }
 
+      $r: $bw / 22;
+
       .a {
         position: absolute;
-        @include fivestar(white, 3px);
+        @include fivestar(white, $r);
         z-index: 2;
 
         @for $i from 1 through 6 {
           @for $j from 1 through 5 {
             &.i#{$i}j#{$j} {
-              left: 3px + ($bw / 6) * ($i - 1);
-              top: 3px + ($bh / 5) * ($j - 1);
+              left: $r + ($bw / 6) * ($i - 1);
+              top: $r + ($bh / 5) * ($j - 1);
             }
           }
         }
       }
 
+
       .b {
         position: absolute;
-        @include fivestar(white, 3px);
+        @include fivestar(white, $r);
         z-index: 2;
 
         @for $i from 1 through 5 {
           @for $j from 1 through 4 {
             &.i#{$i}j#{$j} {
-              left: 3px + ($bw / 6) * ($i - 1) + 5.5px;
-              top: 3px + ($bh / 5) * ($j - 1) + 5.5px;
+              left: $r + ($bw / 6) * ($i - 1) + $r * 2;
+              top: $r + ($bh / 5) * ($j - 1) + $r * 2;
             }
           }
         }
