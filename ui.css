@@ -18,8 +18,120 @@ body {
   margin-bottom: 30px;
   border-radius: 4px;
   overflow: hidden; }
-  .flag:nth-child(4n+1) {
-    clear: both; }
+
+hr {
+  clear: both;
+  border: 0 none;
+  border-top: dashed 1px #aaa;
+  margin: 30px 0; }
+
+.flag.france {
+  box-sizing: border-box;
+  border-left: solid 60px #002d67;
+  border-right: solid 60px #ef4135;
+  background-color: white; }
+
+.flag.italy {
+  box-sizing: border-box;
+  border-left: solid 60px #008d46;
+  border-right: solid 60px #d2232c;
+  background-color: white; }
+
+.flag.belgium {
+  box-sizing: border-box;
+  border-left: solid 60px black;
+  border-right: solid 60px #ee0000;
+  background-color: #ffde00; }
+
+.flag.nigeria {
+  box-sizing: border-box;
+  border-left: solid 60px #008751;
+  border-right: solid 60px #008751;
+  background-color: white; }
+
+.flag.cote {
+  box-sizing: border-box;
+  border-left: solid 60px #f77f00;
+  border-right: solid 60px #009e60;
+  background-color: white; }
+
+.flag.germany {
+  box-sizing: border-box;
+  border-top: solid 36.66667px black;
+  border-bottom: solid 36.66667px #ffd900;
+  background-color: #ed1c24; }
+
+.flag.holland {
+  box-sizing: border-box;
+  border-top: solid 36.66667px #a20e23;
+  border-bottom: solid 36.66667px #1f4085;
+  background-color: white; }
+
+.flag.russia {
+  box-sizing: border-box;
+  border-top: solid 36.66667px white;
+  border-bottom: solid 36.66667px red;
+  background-color: blue; }
+
+.flag.columbia {
+  box-sizing: border-box;
+  border-top: solid 36.66667px #fcd116;
+  border-bottom: solid 36.66667px #ce1126;
+  background-color: #003893;
+  border-top-width: 55px;
+  border-bottom-width: 27.5px; }
+
+.flag.england:before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  height: 22px;
+  left: 0;
+  right: 0;
+  background-color: #CF142B; }
+.flag.england:after {
+  content: "";
+  position: absolute;
+  left: 79px;
+  width: 22px;
+  top: 0;
+  bottom: 0;
+  background-color: #CF142B; }
+
+.flag.switzerland {
+  background-color: #BD2925; }
+  .flag.switzerland:before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    height: 22px;
+    left: 53.7px;
+    width: 72.6px;
+    background-color: #fff; }
+  .flag.switzerland:after {
+    content: "";
+    position: absolute;
+    top: 18.7px;
+    height: 72.6px;
+    left: 79px;
+    width: 22px;
+    background-color: #fff; }
+
+.flag.costarica {
+  background-color: #002B7F; }
+  .flag.costarica:before {
+    content: "";
+    position: absolute;
+    top: 18.33333px;
+    bottom: 18.33333px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-top: solid 36.66667px white;
+    border-bottom: solid 36.66667px white;
+    background-color: #ce1126;
+    border-top-width: 18.33333px;
+    border-bottom-width: 18.33333px; }
 
 .flag.japan:before {
   content: "";
@@ -32,280 +144,59 @@ body {
   left: 60px;
   border-radius: 60px; }
 
-.flag.france:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #002D67; }
-.flag.france:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #EF4135; }
-
-.flag.italy:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #008D46; }
-.flag.italy:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #D2232C; }
-
-.flag.belgium {
-  background-color: #FFDE00; }
-  .flag.belgium:before {
+.flag.greece {
+  background-color: #0061AA; }
+  .flag.greece:before {
     content: "";
-    display: block;
+    position: absolute;
+    top: 12.22222px;
+    height: 36.66667px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-top: solid 36.66667px white;
+    border-bottom: solid 36.66667px white;
+    background-color: #0061aa;
+    border-top-width: 12.22222px;
+    border-bottom-width: 12.22222px; }
+  .flag.greece:after {
+    content: "";
+    position: absolute;
+    bottom: 12.22222px;
+    height: 36.66667px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-top: solid 36.66667px white;
+    border-bottom: solid 36.66667px white;
+    background-color: #0061aa;
+    border-top-width: 12.22222px;
+    border-bottom-width: 12.22222px; }
+  .flag.greece .a {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    width: 33.33333%;
-    background-color: #000000; }
-  .flag.belgium:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 33.33333%;
-    background-color: #EE0000; }
-
-.flag.nigeria:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #008751; }
-.flag.nigeria:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #008751; }
-
-.flag.cote:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #F77F00; }
-.flag.cote:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 33.33333%;
-  background-color: #009E60; }
-
-.flag.germany {
-  background-color: #ED1C24; }
-  .flag.germany:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 33.33333%;
-    background-color: #000000; }
-  .flag.germany:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 33.33333%;
-    background-color: #FFD900; }
-
-.flag.holland:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 33.33333%;
-  background-color: #A20E23; }
-.flag.holland:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 33.33333%;
-  background-color: #1F4085; }
-
-.flag.russia {
-  background-color: #0000FF; }
-  .flag.russia:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 33.33333%;
-    background-color: #FFFFFF; }
-  .flag.russia:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 33.33333%;
-    background-color: #FF0000; }
-
-.flag.columbia {
-  background-color: #003893; }
-  .flag.columbia:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background-color: #FCD116; }
-  .flag.columbia:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 25%;
-    background-color: #CE1126; }
-
-.flag.costarica:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 16.66667%;
-  background-color: #002B7F; }
-.flag.costarica:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 16.66667%;
-  background-color: #002B7F; }
-.flag.costarica .a {
-  position: absolute;
-  top: 33.33333%;
-  bottom: 33.33333%;
-  left: 0;
-  right: 0;
-  background-color: #CE1126; }
-
-.flag.england:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 44px;
-  height: 22px;
-  left: 0;
-  right: 0;
-  background-color: #CF142B; }
-.flag.england:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 79px;
-  width: 22px;
-  top: 0;
-  bottom: 0;
-  background-color: #CF142B; }
-
-.flag.switzerland {
-  background-color: #BD2925; }
-  .flag.switzerland:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 44px;
-    height: 22px;
-    left: 53.7px;
-    width: 72.6px;
-    background-color: #fff; }
-  .flag.switzerland:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 18.7px;
-    height: 72.6px;
-    left: 79px;
-    width: 22px;
-    background-color: #fff; }
-
-.flag.greece .a {
-  height: 12.22222px;
-  background-color: #0061AA;
-  margin-bottom: 12.22222px; }
-.flag.greece .b {
-  background-color: #0061AA;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 67.5px;
-  height: 61.11111px; }
-  .flag.greece .b:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 16.875px;
-    margin-top: -8.4375px;
-    background-color: #fff; }
-  .flag.greece .b:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 16.875px;
-    top: 0;
-    bottom: 0;
-    margin-left: -8.4375px;
-    background-color: #FFF; }
+    width: 67.5px;
+    height: 61.11111px;
+    background-color: #0061AA; }
+    .flag.greece .a:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 12.22222px;
+      left: 0;
+      right: 0;
+      background-color: #FFF;
+      margin-top: -6.11111px; }
+    .flag.greece .a:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 12.22222px;
+      top: 0;
+      bottom: 0;
+      background-color: #FFF;
+      margin-left: -6.11111px; }
 
 .star {
   width: 0;
